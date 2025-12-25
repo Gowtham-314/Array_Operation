@@ -1,8 +1,19 @@
-Array Operation using NumPy
+<h1><span style="color:blue;">Array Operation using NumPy</span></h1>
 
-Traversal
-Insertion
-Deletion
-Searching
-Sorting
-Merging
+- Traversal
+- Insertion
+- Deletion
+- Searching
+- Sorting
+- Merging
+
+## Searching 
+- Linear Search
+- Binary Search
+
+## Sorting
+- Insertion Sort
+- Bubble Sort
+- Quick Sort
+- Selection Sort
+- Merge Sort

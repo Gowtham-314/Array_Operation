@@ -17,7 +17,7 @@ class ArrayInsertion:
     def insert_ele(self,pos,ele):
         for i in range(length-1,pos-1,-1):
             my_array[i+1]=my_array[i]
-        my_array[pos]=ele
+        print(my_array[pos-1])
     
 arr_insert=ArrayInsertion()
 arr_insert.array_input()
@@ -25,7 +25,7 @@ global length
 length=len(my_array)
 position=int(input(f"Enter the position to insert the element (0 to {length}): "))
 
-if position<=0 or position>length+1:
+if position<0 or position>length+1:
     print(f"Invalid position. Please enter aposition between 0 and {length}.")
     exit()
     

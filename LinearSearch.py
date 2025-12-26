@@ -18,8 +18,8 @@ class LineraSearch:
             
     def search_ele(self,ele):
         for i in range(len(my_array)):
-            if array[i]==ele:
-                print(f"Element {self.ele} found at position: {i}")
+            if my_array[i]==ele:
+                print(f"Element {ele} found at position: {i}")
                 return
         print("Element not found in the array.")
         

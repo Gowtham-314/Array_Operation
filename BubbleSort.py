@@ -2,11 +2,11 @@
 
 #Program to Sorting a elements in an array using NumPy.
 
-#    Insertion Sort Algorithm
+#    Bubble Sort Algorithm
 
 from numpy import *
 
-class InsertionSort:
+class BubbleSort:
     
     def array_input(self):
         try:
@@ -17,17 +17,15 @@ class InsertionSort:
     
     def array_sort(self):
         
-        for i in range(1,len(self.my_array)):
-            j=i
-            while j>=1:
-                if self.my_array[j]<self.my_array[j-1]:
-                    self.my_array[j-1],self.my_array[j]==self.my_array[j],self.my_array[j-1]
-            j-=1
+        n = len(self.my_array)
+        for i in range(n):
+            for j in range(0, n - i - 1):
+                if self.my_array[j] > self.my_array[j + 1]:
+                    self.my_array[j], self.my_array[j + 1] = self.my_array[j + 1], self.my_array[j]
 
 
-arr_sort=InsertionSort()
+arr_sort=BubbleSort()
 arr_sort.array_input()
 print("Array Before the Sort : ",arr_sort.my_array)
 arr_sort.array_sort()
 print("\nArray After the Sort : ",arr_sort.my_array)
-exit()
